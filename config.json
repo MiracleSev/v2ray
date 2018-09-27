@@ -8,8 +8,9 @@
     "settings": {
       "clients": [
         {
-          "id": "your_uuid",
-          "alterId": 64
+          "id": "your_uuid",(你自己的uuid)
+          "alterId": 64,
+          "security": "aes-128-cfb"（加密方式可以自定义，非局限于此）
         }
       ]
     },
@@ -17,6 +18,7 @@
       "network": "ws"
     }
   },
+  "inboundDetour": [],
   "outbound": {
     "protocol": "freedom",
     "settings": {}
